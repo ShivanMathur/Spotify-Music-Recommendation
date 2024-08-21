@@ -6,11 +6,9 @@ from st_pages import Page, Section, add_page_title, show_pages
 
 
 def main():
-    st.title("Spotify Recommendation System")
+    st.title("Spotify Music Recommendation System")
 
-    "## This project is made as part of CSE 560: Data Model and Query Languages"
-
-    "## By: Shivan Mathur and Debosmit Neogi"
+    "## By: Shivan Mathur"
 
     show_pages(
     [
