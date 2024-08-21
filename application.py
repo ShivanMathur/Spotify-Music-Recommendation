@@ -12,7 +12,7 @@ def main():
 
     show_pages(
     [
-        Page("application_deployment/dmql_spotify_app.py", "Home", "🏠"),
+        Page("application.py", "Home", "🏠"),
         Page("application_deployment/users.py", "Users"),
         Page("application_deployment/artists.py", "Artists"),
         Page("application_deployment/album.py", "Album"),
