@@ -6,15 +6,24 @@ from st_pages import add_page_title
 add_page_title()
 
 
+# def connect_to_database():
+#     conn = psycopg2.connect(
+#         host="localhost",
+#         port = 5432,
+#         database="dmql_project",
+#         user="dmql",
+#         password="dmql"
+#     )
+#     return conn
+
 def connect_to_database():
     conn = psycopg2.connect(
-        host="localhost",
-        port = 5432,
-        database="dmql_project",
-        user="dmql",
-        password="dmql"
+        database=st.secrets["DB_NAME"],
+        user=st.secrets["DB_USERNAME"],
+        password=st.secrets["DB_PASSWORD"]
     )
     return conn
+
 
 def tracks_released_each_year():
     conn = connect_to_database()
